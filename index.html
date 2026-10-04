@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<html class="scroll-smooth bg-[#FAF9F5] text-[#1B1C1A]" lang="id">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Salon Muslimah di Cikarang Selatan untuk perawatan rambut, facial, spa, dan rutinitas kecantikan dengan privasi wanita serta bahan halal aman." name="description"/>
+<meta content="Alia Salon Muslimah, salon muslimah Cikarang, salon khusus wanita, perawatan kecantikan muslimah, spa Muslimah, kursus salon" name="keywords"/>
+<meta content="ALIA SALON MUSLIMAH — Haute Sanctuary & Private Atelier Cikarang" property="og:title"/>
+<meta content="Salon Muslimah di Cikarang Selatan dengan layanan rambut, facial, spa, dan kursus salon yang menjaga privasi, kebersihan, dan kenyamanan wanita." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="https://example.com/" property="og:url"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<title>ALIA SALON MUSLIMAH — Haute Sanctuary &amp; Private Atelier Cikarang</title>
+<!-- Use local Tailwind build instead of external CDN -->
+<link rel="stylesheet" href="tailwind-output.css"/>
+<!-- External Professional Styles -->
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body class="selection:bg-antique-gold/20 selection:text-forest-deep relative bg-[#FAF9F5] text-[#141714] antialiased">
+<!-- Ambient Background Glows -->
+<div class="fixed top-0 left-1/4 w-[500px] h-[500px] bg-[#EBE5D3]/40 rounded-full blur-[130px] pointer-events-none -z-10"></div>
+<div class="fixed top-1/2 right-[-100px] w-[500px] h-[500px] bg-[#E3EAE4]/35 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+<div class="fixed bottom-0 left-[-100px] w-[450px] h-[450px] bg-[#EFE9DC]/40 rounded-full blur-[130px] pointer-events-none -z-10"></div>
+<!-- Mouse Cursors -->
+<div class="cursor-dot hidden md:block" id="cursorDot"></div>
+<div class="cursor-follower hidden md:block" data-cursor-text="" id="cursorFollower"></div>
+<!-- ======================================================== -->
+<!-- HEADER & CONCIERGE NAVIGATION -->
+<!-- ======================================================== -->
+<header class="sticky top-0 z-40 bg-[#FAF9F5]/90 backdrop-blur-xl border-b border-border-subtle transition-all duration-300 shadow-sm">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 sm:h-24 flex items-center justify-between">
+<!-- Brand Flagship Lockup with Round Logo -->
+<a class="flex items-center gap-3.5 group" data-cursor="ALIA" href="#beranda">
+<div class="w-11 h-11 sm:w-12 sm:h-12 rounded-full overflow-hidden p-[2px] gold-shimmer shadow-pill shrink-0">
+<div class="w-full h-full rounded-full bg-white flex items-center justify-center overflow-hidden">
+<img alt="Logo Alia Salon Muslimah" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500" src="logo%20salon.jpg"/>
+</div>
+</div>
+<div class="flex flex-col">
+<span class="font-serif text-xl sm:text-2xl font-medium tracking-[0.04em] text-text-main leading-tight group-hover:text-forest-deep transition-colors">ALIA SALON</span>
+<span class="text-[9px] uppercase tracking-[0.25em] text-antique-gold font-semibold font-sans">Haute Muslimah Sanctuary</span>
+</div>
+</a>
+<!-- Nav Items -->
+<nav class="hidden lg:flex items-center space-x-8 text-[11px] uppercase tracking-[0.22em] font-semibold text-text-body/80">
+<a class="hover:text-forest-deep transition-colors" data-cursor="VIEW" href="#beranda">Atelier</a>
+<a class="hover:text-forest-deep transition-colors" data-cursor="READ" href="#filosofi">Filosofi</a>
+<a class="hover:text-forest-deep transition-colors" data-cursor="MENU" href="#layanan">Layanan</a>
+<a class="hover:text-forest-deep transition-colors" data-cursor="ACADEMY" href="#akademi">Akademi</a>
+<a class="hover:text-forest-deep transition-colors" data-cursor="BOOK" href="#reservasi">Reservasi</a>
+<a class="hover:text-forest-deep transition-colors" data-cursor="MAP" href="#lokasi">Lokasi</a>
+</nav>
+<!-- Header Actions -->
+<div class="flex items-center gap-3.5 sm:gap-4">
+<div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-alt border border-border-subtle text-[11px] text-text-body">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600 live-dot"></span>
+<span class="tracking-wider uppercase text-[10px] text-text-main font-semibold" id="headerLiveStatus">Cikarang • Buka Setiap Hari</span>
+</div>
+<a class="relative group overflow-hidden rounded-full p-[1px] gold-shimmer shadow-pill shrink-0" data-cursor="RESERVE" href="#reservasi">
+<div class="px-5 sm:px-6 py-2 sm:py-2.5 rounded-full bg-surface-card hover:bg-forest-deep transition-colors duration-300 flex items-center gap-2">
+<span class="text-[11px] uppercase tracking-[0.2em] font-semibold text-antique-gold group-hover:text-white transition-colors">Reservasi Sekarang</span>
+<svg class="w-3.5 h-3.5 text-antique-gold group-hover:text-white group-hover:translate-x-0.5 transition-all" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</div>
+</a>
+</div>
+</div>
+</header>
+<!-- ======================================================== -->
+<!-- HERO SECTION -->
+<!-- ======================================================== -->
+<section class="relative pt-10 pb-20 lg:pt-16 lg:pb-28 overflow-hidden border-b border-border-subtle" id="beranda">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<!-- Top Metadata Bar -->
+<div class="flex flex-wrap items-center justify-between gap-4 pb-6 mb-8 lg:mb-12 border-b border-border-subtle text-[11px] uppercase tracking-[0.22em] text-text-muted">
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-forest-soft border border-forest-deep/20 text-forest-deep font-semibold text-[10px]">
+<span class="w-1.5 h-1.5 rounded-full bg-forest-deep"></span>CIKARANG SELATAN — SUKADAMI
+        </span>
+<span class="hidden sm:inline text-border-subtle">•</span>
+<span class="hidden sm:inline font-medium text-text-body">100% PRIVASI &amp; RUANG KHUSUS WANITA</span>
+</div>
+<div class="flex items-center gap-4 text-text-muted">
+<span class="font-serif italic capitalize tracking-normal text-sm sm:text-base text-antique-gold font-normal">Ruang teduh &amp; relaksasi syar'i</span>
+<span class="font-mono text-[10px] text-text-muted">EST. 2025</span>
+</div>
+</div>
+<!-- Editorial Asymmetrical Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+<!-- Left Column -->
+<div class="lg:col-span-7 space-y-6 lg:space-y-8">
+<div class="space-y-3">
+<p class="text-[11px] uppercase tracking-[0.3em] text-antique-gold font-bold">Bespoke Hair &amp; Body Sanctuary</p>
+<h1 class="font-serif text-4xl sm:text-6xl lg:text-7xl font-normal leading-[1.08] tracking-[-0.015em] text-text-main">
+            Kenyamanan Eksklusif, <br/>
+<span class="italic font-normal text-antique-gold">Relaksasi Sejati</span> Muslimah.
+          </h1>
+</div>
+<p class="text-base sm:text-lg text-text-body font-light leading-relaxed max-w-xl">
+          Tempat perawatan kecantikan khusus kaum hawa di Cikarang Selatan yang mengedepankan ketenangan, kebersihan, dan perlindungan privasi menyeluruh. Ditangani ramah oleh kapster bersertifikat dalam suasana sejuk beraroma atsiri.
+        </p>
+<!-- Action Buttons -->
+<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-2">
+<a class="px-8 py-4 bg-forest-deep text-white rounded-full font-semibold text-[11px] uppercase tracking-[0.2em] text-center hover:bg-forest-tint transition-all shadow-luxe flex items-center justify-center gap-3 group" data-cursor="RESERVE" href="#reservasi">
+<span>Mulai Reservasi</span>
+<svg class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+<a class="px-8 py-4 bg-surface-card text-text-main rounded-full font-semibold text-[11px] uppercase tracking-[0.2em] text-center hover:border-antique-gold border border-border-subtle shadow-sm transition-all" data-cursor="EXPLORE" href="#layanan">
+            Lihat Menu Layanan
+          </a>
+</div>
+<!-- Metric Editorial Callout -->
+<div class="pt-6 lg:pt-8 border-t border-border-subtle grid grid-cols-3 gap-4 sm:gap-6 text-left">
+<div>
+<div class="font-serif text-3xl sm:text-4xl text-antique-gold font-normal">4.9<span class="text-base font-sans text-text-muted font-normal">/5</span></div>
+<p class="text-[10px] uppercase tracking-[0.16em] text-text-muted mt-1 font-semibold">95+ Ulasan Google</p>
+</div>
+<div>
+<div class="font-serif text-3xl sm:text-4xl text-text-main font-normal">100<span class="text-base font-sans text-antique-gold">%</span></div>
+<p class="text-[10px] uppercase tracking-[0.16em] text-text-muted mt-1 font-semibold">Bebas Aurat Pria</p>
+</div>
+<div>
+<div class="font-serif text-3xl sm:text-4xl text-text-main font-normal">1.500<span class="text-base font-sans text-antique-gold">+</span></div>
+<p class="text-[10px] uppercase tracking-[0.16em] text-text-muted mt-1 font-semibold">Pelanggan Setia</p>
+</div>
+</div>
+</div>
+<!-- Right Column: Editorial Architecture Frame with Interior Photo -->
+<div class="lg:col-span-5 relative">
+<div class="relative mx-auto max-w-md lg:max-w-none">
+<!-- Outer Decorative Border Frame -->
+<div class="absolute -top-3 -left-3 w-full h-full border border-antique-gold/30 rounded-3xl -z-10"></div>
+<div class="absolute -bottom-3 -right-3 w-full h-full border border-border-subtle rounded-3xl -z-10 bg-surface-alt"></div>
+<!-- Main Image Container -->
+<div class="hero-image-wrapper relative rounded-2xl overflow-hidden bg-surface-alt border border-border-subtle shadow-luxe group" data-cursor="SUITE">
+<img alt="Alia Salon Muslimah Sanctuary Interior" class="hero-image w-full h-[460px] sm:h-[500px] object-cover object-center filter contrast-[1.03] transition-transform duration-700" src="1.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+<!-- Floating Status Tag -->
+<div class="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-white/95 backdrop-blur-md border border-border-subtle flex items-center gap-2 shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600 live-dot"></span>
+<span class="text-[9px] uppercase tracking-[0.22em] text-text-main font-semibold">Suite Utama • Khusus Akhwat</span>
+</div>
+<!-- Bottom Floating Caption -->
+<div class="absolute bottom-5 left-5 right-5 p-4 sm:p-5 rounded-xl bg-white/95 backdrop-blur-md border border-border-subtle shadow-lg">
+<div class="flex items-center justify-between">
+<div>
+<p class="text-[9px] uppercase tracking-[0.22em] text-antique-gold font-bold">Privasi Tertutup Penuh</p>
+<h4 class="font-serif text-xl sm:text-2xl text-text-main mt-0.5">Atmosphere of Sanctuary</h4>
+</div>
+<div class="w-8 h-8 rounded-full bg-forest-soft border border-forest-deep/20 flex items-center justify-center text-forest-deep shrink-0">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+</div>
+</div>
+<p class="text-xs text-text-body mt-2 font-light leading-relaxed">
+                Pintu tertutup rapat, jendela berstiker one-way, ruangan wangi terapi bunga segar, serta musik instrumental yang merelaksasikan pikiran.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ======================================================== -->
+<!-- INFINITE MANIFESTO TICKER -->
+<!-- ======================================================== -->
+<div class="border-y border-border-subtle bg-surface-alt py-3.5 overflow-hidden relative">
+<div class="animate-marquee whitespace-nowrap text-[11px] uppercase tracking-[0.25em] text-text-body font-semibold flex items-center">
+<span class="mx-6 flex items-center gap-3 shrink-0"><span class="text-antique-gold">✦</span> 100% KHUSUS WANITA</span>
+<span class="mx-6 flex items-center gap-3 shrink-0"><span class="text-antique-gold">✦</span> KAPSTER BERPENGALAMAN &amp; BERSERTIFIKAT</span>
+<span class="mx-6 flex items-center gap-3 shrink-0"><span class="text-antique-gold">✦</span> BAHAN ALAMI &amp; HALAL BPOM</span>
+<span class="mx-6 flex items-center gap-3 shrink-0"><span class="text-antique-gold">✦</span> RUANGAN BER-AC &amp; STERIL</span>
+<span class="mx-6 flex items-center gap-3 shrink-0"><span class="text-antique-gold">✦</span> BUKA SETIAP HARI 07:30 – 20:30 WIB</span>
+<span class="mx-6 flex items-center gap-3 shrink-0"><span class="text-antique-gold">✦</span> BEBAS PANDANGAN LAKI-LAKI</span>
+<span class="mx-6 flex items-center gap-3 shrink-0"><span class="text-antique-gold">✦</span> PELAYANAN RAMAH &amp; TELITI</span>
+<span class="mx-6 flex items-center gap-3 shrink-0"><span class="text-antique-gold">✦</span> 100% KHUSUS WANITA</span>
+<span class="mx-6 flex items-center gap-3 shrink-0"><span class="text-antique-gold">✦</span> KAPSTER BERPENGALAMAN &amp; BERSERTIFIKAT</span>
+<span class="mx-6 flex items-center gap-3 shrink-0"><span class="text-antique-gold">✦</span> BAHAN ALAMI &amp; HALAL BPOM</span>
+<span class="mx-6 flex items-center gap-3 shrink-0"><span class="text-antique-gold">✦</span> RUANGAN BER-AC &amp; STERIL</span>
+<span class="mx-6 flex items-center gap-3 shrink-0"><span class="text-antique-gold">✦</span> BUKA SETIAP HARI 07:30 – 20:30 WIB</span>
+<span class="mx-6 flex items-center gap-3 shrink-0"><span class="text-antique-gold">✦</span> BEBAS PANDANGAN LAKI-LAKI</span>
+<span class="mx-6 flex items-center gap-3 shrink-0"><span class="text-antique-gold">✦</span> PELAYANAN RAMAH &amp; TELITI</span>
+</div>
+</div>
+<!-- ======================================================== -->
+<!-- SECTION: FILOSOFI & 4 NILAI UTAMA -->
+<!-- ======================================================== -->
+<section class="py-20 lg:py-28 relative bg-[#FAF9F5]" id="filosofi">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+<!-- Left Column: Manifesto Headline & Credo -->
+<div class="lg:col-span-5 space-y-6 reveal reveal-delay-2 pillar-card">
+<div class="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.3em] text-antique-gold font-bold">
+<span>01</span>
+<span class="w-8 h-[1px] bg-antique-gold"></span>
+<span>Filosofi Layanan</span>
+</div>
+<h2 class="font-serif text-3xl sm:text-5xl font-normal text-text-main leading-tight">
+          Kemewahan Alami yang <br/>
+<span class="italic text-antique-gold">Menjaga Kehormatan</span> Wanita.
+        </h2>
+<p class="text-sm sm:text-base text-text-body font-light leading-relaxed">
+          Bagi seorang muslimah, rambut dan raga adalah mahkota yang patut dirawat dengan penuh pemuliaan. Alia Salon hadir memberikan ketenangan hati saat Anda melepas kerudung tanpa rasa khawatir privasi terusik.
+        </p>
+<div class="p-6 rounded-2xl bg-surface-card border border-border-subtle shadow-luxe">
+<div class="flex items-center gap-3 mb-2">
+<span class="w-2.5 h-2.5 rounded-full bg-antique-gold"></span>
+<h4 class="font-serif text-xl text-text-main font-medium">Jaminan Rasa Aman &amp; Nyaman</h4>
+</div>
+<p class="text-xs text-text-body leading-relaxed font-light">
+            Setiap area treatment dirancang intim, bersih, dan higienis. Dari kapster hingga staf concierge seluruhnya wanita amanah yang siap melayani dengan ketulusan hati.
+          </p>
+</div>
+</div>
+<!-- Right Column: 4 Pillars with Architecture -->
+<div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-5 sm:gap-6">
+<!-- Pillar 1 -->
+<div class="p-7 rounded-2xl bg-surface-card border border-border-subtle hover:border-antique-gold/60 transition-all duration-300 shadow-luxe hover:shadow-luxe-hover group reveal reveal-delay-1 pillar-card">
+<div class="w-12 h-12 rounded-xl bg-forest-soft border border-forest-deep/15 flex items-center justify-center text-forest-deep mb-5 group-hover:scale-105 transition-transform">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path>
+</svg>
+</div>
+<h3 class="font-serif text-2xl text-text-main mb-2 group-hover:text-forest-deep transition-colors">Privasi 100% Tertutup</h3>
+<p class="text-xs text-text-body leading-relaxed font-light">
+            Ruangan tertutup tanpa akses visual dari luar. Tidak ada pengunjung pria di area layanan, membuat Anda leluasa dan tenang.
+          </p>
+</div>
+<!-- Pillar 2 -->
+<div class="p-7 rounded-2xl bg-surface-card border border-border-subtle hover:border-antique-gold/60 transition-all duration-300 shadow-luxe hover:shadow-luxe-hover group reveal reveal-delay-2 pillar-card">
+<div class="w-12 h-12 rounded-xl bg-forest-soft border border-forest-deep/15 flex items-center justify-center text-forest-deep mb-5 group-hover:scale-105 transition-transform">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path>
+</svg>
+</div>
+<h3 class="font-serif text-2xl text-text-main mb-2 group-hover:text-forest-deep transition-colors">Kapster Bersertifikat</h3>
+<p class="text-xs text-text-body leading-relaxed font-light">
+            Tim profesional berpengalaman dengan sertifikasi tata kecantikan yang terlatih memotong dan merawat rambut wanita berhijab.
+          </p>
+</div>
+<!-- Pillar 3 -->
+<div class="p-7 rounded-2xl bg-surface-card border border-border-subtle hover:border-antique-gold/60 transition-all duration-300 shadow-luxe hover:shadow-luxe-hover group reveal reveal-delay-3 pillar-card">
+<div class="w-12 h-12 rounded-xl bg-forest-soft border border-forest-deep/15 flex items-center justify-center text-forest-deep mb-5 group-hover:scale-105 transition-transform">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path>
+</svg>
+</div>
+<h3 class="font-serif text-2xl text-text-main mb-2 group-hover:text-forest-deep transition-colors">Bahan Alami &amp; Halal BPOM</h3>
+<p class="text-xs text-text-body leading-relaxed font-light">
+            Menggunakan krim herbal, aromaterapi atsiri, dan formula terdaftar resmi yang wudhu-friendly serta aman untuk kulit sensitif.
+          </p>
+</div>
+<!-- Pillar 4 -->
+<div class="p-7 rounded-2xl bg-surface-card border border-border-subtle hover:border-antique-gold/60 transition-all duration-300 shadow-luxe hover:shadow-luxe-hover group reveal reveal-delay-4 pillar-card">
+<div class="w-12 h-12 rounded-xl bg-forest-soft border border-forest-deep/15 flex items-center justify-center text-forest-deep mb-5 group-hover:scale-105 transition-transform">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"></path>
+</svg>
+</div>
+<h3 class="font-serif text-2xl text-text-main mb-2 group-hover:text-forest-deep transition-colors">Tempat Ber-AC &amp; Higienis</h3>
+<p class="text-xs text-text-body leading-relaxed font-light">
+            Sanitasi berkala, handuk bersih wangi, alat gunting disterilkan UV, serta pendingin ruangan yang menjaga kesejukan ruang.
+          </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ======================================================== -->
+<!-- SECTION: THE BESPOKE SUITES COLLECTION (15 LAYANAN LENGKAP) -->
+<!-- ======================================================== -->
+<section class="py-20 lg:py-28 relative bg-surface-alt border-y border-border-subtle" id="layanan">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<!-- Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 lg:mb-16 gap-6">
+<div class="space-y-3">
+<div class="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.3em] text-antique-gold font-bold">
+<span>02</span>
+<span class="w-8 h-[1px] bg-antique-gold"></span>
+<span>Daftar Menu Sanctuary</span>
+</div>
+<h2 class="font-serif text-3xl sm:text-5xl font-normal text-text-main tracking-tight">Koleksi 15 Layanan Perawatan</h2>
+</div>
+<p class="text-xs sm:text-sm text-text-body font-light max-w-md leading-relaxed">
+        Pilihan paket perawatan menyeluruh dari ujung rambut hingga ujung kaki, disesuaikan untuk kenyamanan dan kesehatan alami muslimah.
+      </p>
+</div>
+<!-- 3 Categories Grid / Lists -->
+<div class="space-y-12 lg:space-y-16">
+<!-- KATEGORI I -->
+<div class="bg-surface-card rounded-3xl p-6 sm:p-8 lg:p-10 border border-border-subtle shadow-luxe">
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between pb-6 mb-6 border-b border-border-subtle gap-2">
+<div class="flex items-center gap-3">
+<span class="px-3 py-1 rounded-full bg-forest-soft text-forest-deep font-bold text-xs uppercase tracking-wider">Kategori I</span>
+<h3 class="font-serif text-2xl sm:text-3xl text-text-main font-normal">Perawatan &amp; Arsitektur Rambut</h3>
+</div>
+<span class="text-[11px] uppercase tracking-[0.2em] text-antique-gold font-semibold">Khusus Rambut Berhijab</span>
+</div>
+<div class="divide-y divide-border-subtle">
+<!-- 1.1 -->
+<div class="py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-surface-alt/50 px-3 -mx-3 rounded-xl transition-colors">
+<div class="flex items-start gap-4">
+<span class="text-xs text-antique-gold font-mono font-bold mt-1">01.1</span>
+<div>
+<h4 class="font-serif text-xl sm:text-2xl text-text-main">Potong Rambut Syar'i &amp; Styling</h4>
+<p class="text-xs text-text-body font-light mt-0.5">Guntingan rapi, mudah diatur, tidak membuat gerah saat tertutup hijab seharian.</p>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center shrink-0">
+<span class="font-serif text-xl text-forest-deep font-semibold">Rp 45.000</span>
+<span class="text-[10px] uppercase tracking-widest text-text-muted">± 45 Menit</span>
+</div>
+</div>
+<!-- 1.2 -->
+<div class="py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-surface-alt/50 px-3 -mx-3 rounded-xl transition-colors">
+<div class="flex items-start gap-4">
+<span class="text-xs text-antique-gold font-mono font-bold mt-1">01.2</span>
+<div>
+<h4 class="font-serif text-xl sm:text-2xl text-text-main">Creambath Aromaterapi Tradisional</h4>
+<p class="text-xs text-text-body font-light mt-0.5">Pijatan kepala, leher, dan punggung berpadu nutrisi ginseng/lidah buaya untuk menguatkan akar rambut.</p>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center shrink-0">
+<span class="font-serif text-xl text-forest-deep font-semibold">Rp 65.000</span>
+<span class="text-[10px] uppercase tracking-widest text-text-muted">± 60 Menit</span>
+</div>
+</div>
+<!-- 1.3 -->
+<div class="py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-surface-alt/50 px-3 -mx-3 rounded-xl transition-colors">
+<div class="flex items-start gap-4">
+<span class="text-xs text-antique-gold font-mono font-bold mt-1">01.3</span>
+<div>
+<h4 class="font-serif text-xl sm:text-2xl text-text-main">Rebonding Pelurusan Rambut Halus</h4>
+<p class="text-xs text-text-body font-light mt-0.5">Formula pelurusan ber-BPOM yang membuat rambut lurus natural tanpa merusak struktur helai rambut.</p>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center shrink-0">
+<span class="font-serif text-xl text-forest-deep font-semibold">Rp 180.000</span>
+<span class="text-[10px] uppercase tracking-widest text-text-muted">± 120 Menit</span>
+</div>
+</div>
+<!-- 1.4 -->
+<div class="py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-surface-alt/50 px-3 -mx-3 rounded-xl transition-colors">
+<div class="flex items-start gap-4">
+<span class="text-xs text-antique-gold font-mono font-bold mt-1">01.4</span>
+<div>
+<h4 class="font-serif text-xl sm:text-2xl text-text-main">Smoothing Lembut Berkilau (Silk Keratin)</h4>
+<p class="text-xs text-text-body font-light mt-0.5">Perawatan keratin intensif menghasilkan rambut jatuh lembut berkilau, bebas kusut, dan berbobot sehat.</p>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center shrink-0">
+<span class="font-serif text-xl text-forest-deep font-semibold">Rp 220.000</span>
+<span class="text-[10px] uppercase tracking-widest text-text-muted">± 150 Menit</span>
+</div>
+</div>
+<!-- 1.5 -->
+<div class="py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-surface-alt/50 px-3 -mx-3 rounded-xl transition-colors">
+<div class="flex items-start gap-4">
+<span class="text-xs text-antique-gold font-mono font-bold mt-1">01.5</span>
+<div>
+<h4 class="font-serif text-xl sm:text-2xl text-text-main">Catok &amp; Blow Variasi Berkilau</h4>
+<p class="text-xs text-text-body font-light mt-0.5">Penataan rambut segar tahan seharian dengan serum pelindung panas berkualitas untuk acara formal.</p>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center shrink-0">
+<span class="font-serif text-xl text-forest-deep font-semibold">Rp 40.000</span>
+<span class="text-[10px] uppercase tracking-widest text-text-muted">± 35 Menit</span>
+</div>
+</div>
+</div>
+</div>
+<!-- KATEGORI II -->
+<div class="bg-surface-card rounded-3xl p-6 sm:p-8 lg:p-10 border border-border-subtle shadow-luxe">
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between pb-6 mb-6 border-b border-border-subtle gap-2">
+<div class="flex items-center gap-3">
+<span class="px-3 py-1 rounded-full bg-forest-soft text-forest-deep font-bold text-xs uppercase tracking-wider">Kategori II</span>
+<h3 class="font-serif text-2xl sm:text-3xl text-text-main font-normal">Dermal Purity &amp; Botanical Spa</h3>
+</div>
+<span class="text-[11px] uppercase tracking-[0.2em] text-antique-gold font-semibold">Pembersihan &amp; Kesegaran Kulit</span>
+</div>
+<div class="divide-y divide-border-subtle">
+<!-- 2.1 -->
+<div class="py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-surface-alt/50 px-3 -mx-3 rounded-xl transition-colors">
+<div class="flex items-start gap-4">
+<span class="text-xs text-antique-gold font-mono font-bold mt-1">02.1</span>
+<div>
+<h4 class="font-serif text-xl sm:text-2xl text-text-main">Facial Deep Cleansing &amp; Steril</h4>
+<p class="text-xs text-text-body font-light mt-0.5">Ekstraksi komedo higienis dengan jarum sekali pakai, pembersihan pori mendalam, dan serum pencerah.</p>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center shrink-0">
+<span class="font-serif text-xl text-forest-deep font-semibold">Rp 85.000</span>
+<span class="text-[10px] uppercase tracking-widest text-text-muted">± 75 Menit</span>
+</div>
+</div>
+<!-- 2.2 -->
+<div class="py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-surface-alt/50 px-3 -mx-3 rounded-xl transition-colors">
+<div class="flex items-start gap-4">
+<span class="text-xs text-antique-gold font-mono font-bold mt-1">02.2</span>
+<div>
+<h4 class="font-serif text-xl sm:text-2xl text-text-main">Totok Wajah Giok (Jade Roller Gua Sha)</h4>
+<p class="text-xs text-text-body font-light mt-0.5">Stimulasi titik meridian wajah dengan batu giok dingin untuk merangsang sirkulasi dan mengencangkan kulit lelah.</p>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center shrink-0">
+<span class="font-serif text-xl text-forest-deep font-semibold">Rp 50.000</span>
+<span class="text-[10px] uppercase tracking-widest text-text-muted">± 40 Menit</span>
+</div>
+</div>
+<!-- 2.3 -->
+<div class="py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-surface-alt/50 px-3 -mx-3 rounded-xl transition-colors">
+<div class="flex items-start gap-4">
+<span class="text-xs text-antique-gold font-mono font-bold mt-1">02.3</span>
+<div>
+<h4 class="font-serif text-xl sm:text-2xl text-text-main">Masker Wajah Alami Peel-Off</h4>
+<p class="text-xs text-text-body font-light mt-0.5">Masker sari bengkoang, green tea, dan spirulina alami untuk menenangkan kulit dan mencerahkan kusam.</p>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center shrink-0">
+<span class="font-serif text-xl text-forest-deep font-semibold">Rp 45.000</span>
+<span class="text-[10px] uppercase tracking-widest text-text-muted">± 35 Menit</span>
+</div>
+</div>
+<!-- 2.4 -->
+<div class="py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-surface-alt/50 px-3 -mx-3 rounded-xl transition-colors">
+<div class="flex items-start gap-4">
+<span class="text-xs text-antique-gold font-mono font-bold mt-1">02.4</span>
+<div>
+<h4 class="font-serif text-xl sm:text-2xl text-text-main">Lulur Rempah &amp; Scrub Tubuh Tradisional</h4>
+<p class="text-xs text-text-body font-light mt-0.5">Butiran scrub beras jepun dan temugiring untuk mengangkat daki serta sel kulit mati, menjadikan kulit sehalus sutra.</p>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center shrink-0">
+<span class="font-serif text-xl text-forest-deep font-semibold">Rp 90.000</span>
+<span class="text-[10px] uppercase tracking-widest text-text-muted">± 60 Menit</span>
+</div>
+</div>
+<!-- 2.5 -->
+<div class="py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-surface-alt/50 px-3 -mx-3 rounded-xl transition-colors">
+<div class="flex items-start gap-4">
+<span class="text-xs text-antique-gold font-mono font-bold mt-1">02.5</span>
+<div>
+<h4 class="font-serif text-xl sm:text-2xl text-text-main">Spa Tubuh &amp; Berendam Aromaterapi Bunga</h4>
+<p class="text-xs text-text-body font-light mt-0.5">Rendaman air hangat kaya minyak mawar dan melati yang melancarkan peredaran darah serta menyegarkan badan lelah.</p>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center shrink-0">
+<span class="font-serif text-xl text-forest-deep font-semibold">Rp 125.000</span>
+<span class="text-[10px] uppercase tracking-widest text-text-muted">± 80 Menit</span>
+</div>
+</div>
+</div>
+</div>
+<!-- KATEGORI III -->
+<div class="bg-surface-card rounded-3xl p-6 sm:p-8 lg:p-10 border border-border-subtle shadow-luxe">
+<div class="flex flex-col sm:flex-row sm:items-baseline justify-between pb-6 mb-6 border-b border-border-subtle gap-2">
+<div class="flex items-center gap-3">
+<span class="px-3 py-1 rounded-full bg-forest-soft text-forest-deep font-bold text-xs uppercase tracking-wider">Kategori III</span>
+<h3 class="font-serif text-2xl sm:text-3xl text-text-main font-normal">Ritual Khusus, Relaksasi &amp; Kursus</h3>
+</div>
+<span class="text-[11px] uppercase tracking-[0.2em] text-antique-gold font-semibold">Kebugaran &amp; Kemandirian</span>
+</div>
+<div class="divide-y divide-border-subtle">
+<!-- 3.1 -->
+<div class="py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-surface-alt/50 px-3 -mx-3 rounded-xl transition-colors">
+<div class="flex items-start gap-4">
+<span class="text-xs text-antique-gold font-mono font-bold mt-1">03.1</span>
+<div>
+<h4 class="font-serif text-xl sm:text-2xl text-text-main">Pijat Relaksasi Seluruh Tubuh</h4>
+<p class="text-xs text-text-body font-light mt-0.5">Teknik massage tradisional dengan minyak zaitun murni meredakan ketegangan urat, pegal pinggang, dan stres harian.</p>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center shrink-0">
+<span class="font-serif text-xl text-forest-deep font-semibold">Rp 95.000</span>
+<span class="text-[10px] uppercase tracking-widest text-text-muted">± 60 Menit</span>
+</div>
+</div>
+<!-- 3.2 -->
+<div class="py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-surface-alt/50 px-3 -mx-3 rounded-xl transition-colors">
+<div class="flex items-start gap-4">
+<span class="text-xs text-antique-gold font-mono font-bold mt-1">03.2</span>
+<div>
+<h4 class="font-serif text-xl sm:text-2xl text-text-main">Terapi Ear Candle Alami</h4>
+<p class="text-xs text-text-body font-light mt-0.5">Pembersihan rongga telinga herbal berbahan beeswax alami, melegakan pernapasan, dan meringankan sakit kepala.</p>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center shrink-0">
+<span class="font-serif text-xl text-forest-deep font-semibold">Rp 45.000</span>
+<span class="text-[10px] uppercase tracking-widest text-text-muted">± 30 Menit</span>
+</div>
+</div>
+<!-- 3.3 -->
+<div class="py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-surface-alt/50 px-3 -mx-3 rounded-xl transition-colors">
+<div class="flex items-start gap-4">
+<span class="text-xs text-antique-gold font-mono font-bold mt-1">03.3</span>
+<div>
+<h4 class="font-serif text-xl sm:text-2xl text-text-main">Perawatan Ratus V Herbal Wangi</h4>
+<p class="text-xs text-text-body font-light mt-0.5">Pengasapan rempah alami majakani dan kayu cendana untuk menjaga kebersihan, kerapatan, serta aroma segar kewanitaan.</p>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center shrink-0">
+<span class="font-serif text-xl text-forest-deep font-semibold">Rp 60.000</span>
+<span class="text-[10px] uppercase tracking-widest text-text-muted">± 35 Menit</span>
+</div>
+</div>
+<!-- 3.4 -->
+<div class="py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-surface-alt/50 px-3 -mx-3 rounded-xl transition-colors">
+<div class="flex items-start gap-4">
+<span class="text-xs text-antique-gold font-mono font-bold mt-1">03.4</span>
+<div>
+<h4 class="font-serif text-xl sm:text-2xl text-text-main">Rias Pengantin Muslimah Syar'i</h4>
+<p class="text-xs text-text-body font-light mt-0.5">Tata rias anggun natural tanpa cukur alis, busana rapi sesuai kaidah syariat, tahan lama sepanjang resepsi.</p>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center shrink-0">
+<span class="font-serif text-xl text-forest-deep font-semibold">Rp 850.000</span>
+<span class="text-[10px] uppercase tracking-widest text-antique-gold font-semibold">Paket Spesial</span>
+</div>
+</div>
+<!-- 3.5 -->
+<div class="py-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-surface-alt/50 px-3 -mx-3 rounded-xl transition-colors">
+<div class="flex items-start gap-4">
+<span class="text-xs text-antique-gold font-mono font-bold mt-1">03.5</span>
+<div>
+<div class="flex items-center gap-2">
+<h4 class="font-serif text-xl sm:text-2xl text-text-main">Kursus Salon Alia Academy</h4>
+<span class="text-[9px] uppercase px-2 py-0.5 rounded-full bg-antique-gold/20 text-antique-gold font-bold border border-antique-gold/30">Bersertifikat</span>
+</div>
+<p class="text-xs text-text-body font-light mt-0.5">Pelatihan intensif potong rambut, creambath, facial steril, dan pendampingan membuka bisnis salon muslimah mandiri.</p>
+</div>
+</div>
+<div class="flex sm:flex-col items-center sm:items-end justify-between sm:justify-center shrink-0">
+<span class="font-serif text-xl text-forest-deep font-semibold">Rp 1.500.000</span>
+<span class="text-[10px] uppercase tracking-widest text-antique-gold font-semibold">Modul Komprehensif</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Direct CTA to Wizard -->
+<div class="mt-12 text-center">
+<a class="inline-flex items-center gap-3 px-8 py-3.5 rounded-full border border-antique-gold text-[11px] uppercase tracking-[0.2em] text-antique-gold bg-surface-card hover:bg-forest-deep hover:text-white hover:border-forest-deep transition-all shadow-sm" href="#reservasi">
+<span>Pesan &amp; Pilih Paket di Wizard Reservasi</span>
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M19 14l-7 7m0 0l-7-7m7 7V3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+</div>
+</div>
+</section>
+<!-- ======================================================== -->
+<!-- SECTION: ALIA BEAUTY & BUSINESS ACADEMY -->
+<!-- ======================================================== -->
+<section class="py-20 lg:py-28 relative bg-[#FAF9F5] overflow-hidden" id="akademi">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+<!-- Left Column: Workshop Photo -->
+<div class="lg:col-span-6 relative">
+<div class="relative rounded-3xl overflow-hidden border border-border-subtle shadow-luxe group" data-cursor="ACADEMY">
+<img alt="Muslimah dengan hijab abu-abu — Alia Salon Muslimah" class="w-full h-[440px] sm:h-[500px] object-cover object-center filter contrast-[1.03] group-hover:scale-105 transition-transform duration-700" src="2.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent"></div>
+<div class="absolute top-5 right-5 px-3.5 py-1.5 rounded-xl bg-white/95 backdrop-blur-md border border-antique-gold/40 shadow-md">
+<span class="text-[9px] uppercase tracking-[0.22em] text-antique-gold font-bold block">Program Terakreditasi</span>
+<span class="text-xs text-text-main font-serif font-medium">Standar Profesional Indonesia</span>
+</div>
+<div class="absolute bottom-5 left-5 right-5 p-5 rounded-2xl bg-white/95 backdrop-blur-md border border-border-subtle shadow-lg">
+<div class="flex items-center justify-between">
+<div>
+<span class="text-[9px] uppercase tracking-[0.22em] text-antique-gold font-bold">Pemberdayaan Kaum Hawa</span>
+<h4 class="font-serif text-xl sm:text-2xl text-text-main mt-0.5 font-medium">Melahirkan Stylist Muslimah Mandiri</h4>
+</div>
+<span class="px-3 py-1 rounded-full bg-forest-soft text-[10px] text-forest-deep uppercase tracking-wider font-bold border border-forest-deep/20 shrink-0">Privat / Reguler</span>
+</div>
+<p class="text-xs text-text-body font-light mt-2 leading-relaxed">
+              Pelatihan tatap muka intensif mencakup teknik potong rambut, creambath relaksasi, manajemen salon, hingga strategi menarik pelanggan setia.
+            </p>
+</div>
+</div>
+</div>
+<!-- Right Column: Narrative & 3 Points -->
+<div class="lg:col-span-6 space-y-6">
+<div class="space-y-3">
+<div class="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.3em] text-antique-gold font-bold">
+<span>03</span>
+<span class="w-8 h-[1px] bg-antique-gold"></span>
+<span>Pelatihan &amp; Usaha</span>
+</div>
+<h2 class="font-serif text-3xl sm:text-5xl font-normal text-text-main leading-tight">
+            Akademi Kecantikan &amp; <br/>
+<span class="italic text-antique-gold font-normal">Kursus Salon Mandiri Alia</span>
+</h2>
+</div>
+<p class="text-base text-text-body font-light leading-relaxed">
+          Bukan sekadar kursus kecantikan biasa. Kami mendidik muslimah agar berpenghasilan mandiri, berkarya dari rumah atau membuka salon muslimah sendiri di lingkungannya.
+        </p>
+<div class="space-y-3.5 pt-1">
+<div class="flex items-start gap-4 p-4 rounded-2xl bg-surface-card border border-border-subtle shadow-sm hover:border-antique-gold/50 transition-all">
+<div class="w-8 h-8 rounded-full bg-antique-gold/15 text-antique-gold flex items-center justify-center shrink-0 mt-0.5 border border-antique-gold/30">
+<span class="text-xs font-mono font-bold">1</span>
+</div>
+<div>
+<h4 class="font-serif text-lg text-text-main font-medium">Praktik Model Nyata Terbimbing 1-on-1</h4>
+<p class="text-xs text-text-body font-light mt-0.5">Bimbingan langsung dari kapster senior mulai dari teknik memegang gunting hingga selesai.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-2xl bg-surface-card border border-border-subtle shadow-sm hover:border-antique-gold/50 transition-all">
+<div class="w-8 h-8 rounded-full bg-antique-gold/15 text-antique-gold flex items-center justify-center shrink-0 mt-0.5 border border-antique-gold/30">
+<span class="text-xs font-mono font-bold">2</span>
+</div>
+<div>
+<h4 class="font-serif text-lg text-text-main font-medium">Konsultasi Bisnis, Modal &amp; Pemasaran</h4>
+<p class="text-xs text-text-body font-light mt-0.5">Panduan memilih distributor produk halal, penetapan harga jasa, dan promosi media sosial.</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-2xl bg-surface-card border border-border-subtle shadow-sm hover:border-antique-gold/50 transition-all">
+<div class="w-8 h-8 rounded-full bg-antique-gold/15 text-antique-gold flex items-center justify-center shrink-0 mt-0.5 border border-antique-gold/30">
+<span class="text-xs font-mono font-bold">3</span>
+</div>
+<div>
+<h4 class="font-serif text-lg text-text-main font-medium">Sertifikat Kelulusan Resmi Alia Academy</h4>
+<p class="text-xs text-text-body font-light mt-0.5">Bekal kredibilitas nyata untuk bekerja profesional atau memulai usaha sendiri.</p>
+</div>
+</div>
+</div>
+<div class="pt-2">
+<a class="inline-flex items-center gap-3 px-8 py-3.5 bg-forest-deep text-white rounded-full font-semibold text-[11px] uppercase tracking-[0.2em] hover:bg-forest-tint transition-all shadow-luxe group" data-cursor="CONSULT" href="https://wa.me/6281280612377?text=Bismillah,%20saya%20tertarik%20konsultasi%20pendaftaran%20kursus%20salon%20Alia%20Academy" rel="noopener noreferrer" target="_blank">
+<span>Daftar Konsultasi Kursus Salon</span>
+<svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M17 8l4 4m0 0l-4 4m4-4H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ======================================================== -->
+<!-- SECTION: BESPOKE MULTI-STEP BOOKING WIZARD -->
+<!-- ======================================================== -->
+<section class="py-20 lg:py-28 relative bg-surface-alt border-y border-border-subtle" id="reservasi">
+<div class="max-w-4xl mx-auto px-6 lg:px-8">
+<div class="text-center space-y-3 mb-10 sm:mb-12">
+<div class="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.3em] text-antique-gold font-bold">
+<span>04</span>
+<span class="w-8 h-[1px] bg-antique-gold"></span>
+<span>Reservasi Online</span>
+</div>
+<h2 class="font-serif text-3xl sm:text-5xl font-normal text-text-main tracking-tight">Form Reservasi Tamu</h2>
+<p class="text-xs sm:text-sm text-text-body font-light max-w-lg mx-auto">
+        Tentukan layanan dan jadwal favorit ukhti agar dapat langsung dilayani dengan tenang tanpa antrean.
+      </p>
+</div>
+<!-- Wizard Box -->
+<div class="bg-surface-card rounded-3xl p-6 sm:p-10 lg:p-12 border border-border-subtle shadow-luxe-hover relative">
+<!-- Progress Bar Tracker -->
+<div class="mb-8 sm:mb-10">
+<div class="flex items-center justify-between text-[11px] uppercase tracking-[0.2em] font-semibold mb-3">
+<span class="text-forest-deep" id="stepIndicator1">01. Pilih Layanan</span>
+<span class="text-text-muted/60" id="stepIndicator2">02. Tanggal &amp; Waktu</span>
+<span class="text-text-muted/60" id="stepIndicator3">03. Data Tamu &amp; WhatsApp</span>
+</div>
+<div class="w-full h-1.5 bg-surface-alt rounded-full overflow-hidden">
+<div class="h-full bg-antique-gold w-1/3 transition-all duration-500 ease-out" id="stepProgress"></div>
+</div>
+</div>
+<!-- FORM WIZARD -->
+<form id="bookingWizard" onsubmit="event.preventDefault(); submitBooking();">
+<!-- STEP 1 -->
+<div class="space-y-6" id="wizardStep1">
+<div class="space-y-1">
+<h3 class="font-serif text-2xl text-text-main">Pilih Layanan Perawatan</h3>
+<p class="text-xs text-text-body font-light">Pilih satu atau beberapa perawatan yang ingin ukhti nikmati:</p>
+</div>
+<!-- Services Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 max-h-[380px] overflow-y-auto pr-2 no-scrollbar">
+<!-- 1 -->
+<label class="flex items-center justify-between p-3.5 rounded-xl border border-border-subtle bg-surface-alt/70 hover:border-antique-gold/60 cursor-pointer transition-all">
+<input class="sr-only peer" data-price="45000" name="services" onchange="updateSummary()" type="checkbox" value="Potong Rambut Syar'i (Rp 45.000)"/>
+<div class="flex flex-col">
+<span class="text-xs font-serif text-text-main peer-checked:text-forest-deep peer-checked:font-bold">Potong Rambut Syar'i</span>
+<span class="text-[10px] text-text-muted font-light">Rapih &amp; Sejuk</span>
+</div>
+<span class="text-xs font-mono text-antique-gold font-semibold">Rp 45.000</span>
+</label>
+<!-- 2 -->
+<label class="flex items-center justify-between p-3.5 rounded-xl border border-border-subtle bg-surface-alt/70 hover:border-antique-gold/60 cursor-pointer transition-all">
+<input checked="" class="sr-only peer" data-price="65000" name="services" onchange="updateSummary()" type="checkbox" value="Creambath Tradisional (Rp 65.000)"/>
+<div class="flex flex-col">
+<span class="text-xs font-serif text-text-main peer-checked:text-forest-deep peer-checked:font-bold">Creambath Aromaterapi</span>
+<span class="text-[10px] text-text-muted font-light">Nutrisi Akar &amp; Pijat</span>
+</div>
+<span class="text-xs font-mono text-antique-gold font-semibold">Rp 65.000</span>
+</label>
+<!-- 3 -->
+<label class="flex items-center justify-between p-3.5 rounded-xl border border-border-subtle bg-surface-alt/70 hover:border-antique-gold/60 cursor-pointer transition-all">
+<input class="sr-only peer" data-price="180000" name="services" onchange="updateSummary()" type="checkbox" value="Rebonding Pelurusan (Rp 180.000)"/>
+<div class="flex flex-col">
+<span class="text-xs font-serif text-text-main peer-checked:text-forest-deep peer-checked:font-bold">Rebonding Halus</span>
+<span class="text-[10px] text-text-muted font-light">Lurus Alami Halus</span>
+</div>
+<span class="text-xs font-mono text-antique-gold font-semibold">Rp 180.000</span>
+</label>
+<!-- 4 -->
+<label class="flex items-center justify-between p-3.5 rounded-xl border border-border-subtle bg-surface-alt/70 hover:border-antique-gold/60 cursor-pointer transition-all">
+<input class="sr-only peer" data-price="220000" name="services" onchange="updateSummary()" type="checkbox" value="Smoothing Berkilau (Rp 220.000)"/>
+<div class="flex flex-col">
+<span class="text-xs font-serif text-text-main peer-checked:text-forest-deep peer-checked:font-bold">Smoothing Silk Keratin</span>
+<span class="text-[10px] text-text-muted font-light">Jatuh Berkilau</span>
+</div>
+<span class="text-xs font-mono text-antique-gold font-semibold">Rp 220.000</span>
+</label>
+<!-- 5 -->
+<label class="flex items-center justify-between p-3.5 rounded-xl border border-border-subtle bg-surface-alt/70 hover:border-antique-gold/60 cursor-pointer transition-all">
+<input class="sr-only peer" data-price="40000" name="services" onchange="updateSummary()" type="checkbox" value="Catok &amp; Blow Variasi (Rp 40.000)"/>
+<div class="flex flex-col">
+<span class="text-xs font-serif text-text-main peer-checked:text-forest-deep peer-checked:font-bold">Catok &amp; Blow Variasi</span>
+<span class="text-[10px] text-text-muted font-light">Styling Formal</span>
+</div>
+<span class="text-xs font-mono text-antique-gold font-semibold">Rp 40.000</span>
+</label>
+<!-- 6 -->
+<label class="flex items-center justify-between p-3.5 rounded-xl border border-border-subtle bg-surface-alt/70 hover:border-antique-gold/60 cursor-pointer transition-all">
+<input class="sr-only peer" data-price="85000" name="services" onchange="updateSummary()" type="checkbox" value="Facial Deep Cleansing (Rp 85.000)"/>
+<div class="flex flex-col">
+<span class="text-xs font-serif text-text-main peer-checked:text-forest-deep peer-checked:font-bold">Facial Deep Cleansing</span>
+<span class="text-[10px] text-text-muted font-light">Pembersihan Komedo Steril</span>
+</div>
+<span class="text-xs font-mono text-antique-gold font-semibold">Rp 85.000</span>
+</label>
+<!-- 7 -->
+<label class="flex items-center justify-between p-3.5 rounded-xl border border-border-subtle bg-surface-alt/70 hover:border-antique-gold/60 cursor-pointer transition-all">
+<input class="sr-only peer" data-price="50000" name="services" onchange="updateSummary()" type="checkbox" value="Totok Wajah Giok (Rp 50.000)"/>
+<div class="flex flex-col">
+<span class="text-xs font-serif text-text-main peer-checked:text-forest-deep peer-checked:font-bold">Totok Wajah Giok</span>
+<span class="text-[10px] text-text-muted font-light">Akupresur Jade Roller</span>
+</div>
+<span class="text-xs font-mono text-antique-gold font-semibold">Rp 50.000</span>
+</label>
+<!-- 8 -->
+<label class="flex items-center justify-between p-3.5 rounded-xl border border-border-subtle bg-surface-alt/70 hover:border-antique-gold/60 cursor-pointer transition-all">
+<input class="sr-only peer" data-price="45000" name="services" onchange="updateSummary()" type="checkbox" value="Masker Wajah Organik (Rp 45.000)"/>
+<div class="flex flex-col">
+<span class="text-xs font-serif text-text-main peer-checked:text-forest-deep peer-checked:font-bold">Masker Wajah Organik</span>
+<span class="text-[10px] text-text-muted font-light">Sari Bengkoang &amp; Green Tea</span>
+</div>
+<span class="text-xs font-mono text-antique-gold font-semibold">Rp 45.000</span>
+</label>
+<!-- 9 -->
+<label class="flex items-center justify-between p-3.5 rounded-xl border border-border-subtle bg-surface-alt/70 hover:border-antique-gold/60 cursor-pointer transition-all">
+<input class="sr-only peer" data-price="90000" name="services" onchange="updateSummary()" type="checkbox" value="Lulur Rempah &amp; Scrub (Rp 90.000)"/>
+<div class="flex flex-col">
+<span class="text-xs font-serif text-text-main peer-checked:text-forest-deep peer-checked:font-bold">Lulur Rempah &amp; Scrub</span>
+<span class="text-[10px] text-text-muted font-light">Eksfoliasi Beras &amp; Temu</span>
+</div>
+<span class="text-xs font-mono text-antique-gold font-semibold">Rp 90.000</span>
+</label>
+<!-- 10 -->
+<label class="flex items-center justify-between p-3.5 rounded-xl border border-border-subtle bg-surface-alt/70 hover:border-antique-gold/60 cursor-pointer transition-all">
+<input class="sr-only peer" data-price="125000" name="services" onchange="updateSummary()" type="checkbox" value="Spa Tubuh &amp; Rendam Bunga (Rp 125.000)"/>
+<div class="flex flex-col">
+<span class="text-xs font-serif text-text-main peer-checked:text-forest-deep peer-checked:font-bold">Spa Berendam Bunga</span>
+<span class="text-[10px] text-text-muted font-light">Air Hangat Atsiri</span>
+</div>
+<span class="text-xs font-mono text-antique-gold font-semibold">Rp 125.000</span>
+</label>
+<!-- 11 -->
+<label class="flex items-center justify-between p-3.5 rounded-xl border border-border-subtle bg-surface-alt/70 hover:border-antique-gold/60 cursor-pointer transition-all">
+<input class="sr-only peer" data-price="95000" name="services" onchange="updateSummary()" type="checkbox" value="Pijat Relaksasi Tubuh (Rp 95.000)"/>
+<div class="flex flex-col">
+<span class="text-xs font-serif text-text-main peer-checked:text-forest-deep peer-checked:font-bold">Pijat Relaksasi Seluruh Tubuh</span>
+<span class="text-[10px] text-text-muted font-light">Minyak Zaitun Hangat</span>
+</div>
+<span class="text-xs font-mono text-antique-gold font-semibold">Rp 95.000</span>
+</label>
+<!-- 12 -->
+<label class="flex items-center justify-between p-3.5 rounded-xl border border-border-subtle bg-surface-alt/70 hover:border-antique-gold/60 cursor-pointer transition-all">
+<input class="sr-only peer" data-price="45000" name="services" onchange="updateSummary()" type="checkbox" value="Terapi Ear Candle (Rp 45.000)"/>
+<div class="flex flex-col">
+<span class="text-xs font-serif text-text-main peer-checked:text-forest-deep peer-checked:font-bold">Terapi Ear Candle</span>
+<span class="text-[10px] text-text-muted font-light">Herbal Telinga &amp; Migrain</span>
+</div>
+<span class="text-xs font-mono text-antique-gold font-semibold">Rp 45.000</span>
+</label>
+<!-- 13 -->
+<label class="flex items-center justify-between p-3.5 rounded-xl border border-border-subtle bg-surface-alt/70 hover:border-antique-gold/60 cursor-pointer transition-all">
+<input class="sr-only peer" data-price="60000" name="services" onchange="updateSummary()" type="checkbox" value="Ratus V Herbal Wangi (Rp 60.000)"/>
+<div class="flex flex-col">
+<span class="text-xs font-serif text-text-main peer-checked:text-forest-deep peer-checked:font-bold">Ratus V Herbal Wangi</span>
+<span class="text-[10px] text-text-muted font-light">Uap Rempah Cendana</span>
+</div>
+<span class="text-xs font-mono text-antique-gold font-semibold">Rp 60.000</span>
+</label>
+<!-- 14 -->
+<label class="flex items-center justify-between p-3.5 rounded-xl border border-border-subtle bg-surface-alt/70 hover:border-antique-gold/60 cursor-pointer transition-all">
+<input class="sr-only peer" data-price="850000" name="services" onchange="updateSummary()" type="checkbox" value="Rias Pengantin Muslimah (Rp 850.000)"/>
+<div class="flex flex-col">
+<span class="text-xs font-serif text-text-main peer-checked:text-forest-deep peer-checked:font-bold">Rias Pengantin Muslimah</span>
+<span class="text-[10px] text-text-muted font-light">Tata Rias Syar'i Anggun</span>
+</div>
+<span class="text-xs font-mono text-antique-gold font-semibold">Rp 850.000</span>
+</label>
+<!-- 15 -->
+<label class="flex items-center justify-between p-3.5 rounded-xl border border-border-subtle bg-surface-alt/70 hover:border-antique-gold/60 cursor-pointer transition-all">
+<input class="sr-only peer" data-price="1500000" name="services" onchange="updateSummary()" type="checkbox" value="Kursus Salon Alia Academy (Rp 1.500.000)"/>
+<div class="flex flex-col">
+<span class="text-xs font-serif text-text-main peer-checked:text-forest-deep peer-checked:font-bold">Kursus Salon Alia Academy</span>
+<span class="text-[10px] text-text-muted font-light">Pelatihan Bisnis Bersertifikat</span>
+</div>
+<span class="text-xs font-mono text-antique-gold font-semibold">Rp 1.500.000</span>
+</label>
+</div>
+<div class="flex justify-end pt-4">
+<button class="px-8 py-3.5 bg-forest-deep text-white rounded-full font-semibold text-[11px] uppercase tracking-[0.2em] hover:bg-forest-tint transition-all flex items-center gap-2 shadow-sm" onclick="goToStep(2)" type="button">
+<span>Lanjut ke Tanggal &amp; Waktu</span>
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</div>
+<!-- STEP 2 -->
+<div class="space-y-6 hidden" id="wizardStep2">
+<div class="space-y-1">
+<h3 class="font-serif text-2xl text-text-main">Pilih Tanggal &amp; Jam Kunjungan</h3>
+<p class="text-xs text-text-body font-light">Pilih hari dan sesi waktu yang cocok dengan jadwal ukhti:</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<div class="md:col-span-5 space-y-2">
+<label class="block text-[11px] uppercase tracking-[0.18em] text-text-muted font-semibold" for="wizDate">Tanggal Perawatan</label>
+<input class="w-full px-4 py-3 rounded-xl border border-border-subtle bg-surface-alt text-text-main focus:outline-none focus:border-antique-gold text-sm transition-all" id="wizDate" type="date"/>
+</div>
+<div class="md:col-span-7 space-y-2">
+<label class="block text-[11px] uppercase tracking-[0.18em] text-text-muted font-semibold">Pilihan Sesi Waktu</label>
+<div class="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
+<label class="p-2.5 rounded-xl border border-border-subtle bg-surface-alt hover:border-antique-gold cursor-pointer text-center text-xs transition-all">
+<input checked="" class="sr-only peer" name="wizTime" type="radio" value="08:30 WIB (Pagi)"/>
+<span class="text-text-body peer-checked:text-forest-deep peer-checked:font-bold block">08:30 WIB</span>
+<span class="text-[9px] text-text-muted block">Sesi Pagi</span>
+</label>
+<label class="p-2.5 rounded-xl border border-border-subtle bg-surface-alt hover:border-antique-gold cursor-pointer text-center text-xs transition-all">
+<input class="sr-only peer" name="wizTime" type="radio" value="10:30 WIB (Pagi)"/>
+<span class="text-text-body peer-checked:text-forest-deep peer-checked:font-bold block">10:30 WIB</span>
+<span class="text-[9px] text-text-muted block">Sesi Pagi</span>
+</label>
+<label class="p-2.5 rounded-xl border border-border-subtle bg-surface-alt hover:border-antique-gold cursor-pointer text-center text-xs transition-all">
+<input class="sr-only peer" name="wizTime" type="radio" value="13:30 WIB (Siang)"/>
+<span class="text-text-body peer-checked:text-forest-deep peer-checked:font-bold block">13:30 WIB</span>
+<span class="text-[9px] text-text-muted block">Sesi Siang</span>
+</label>
+<label class="p-2.5 rounded-xl border border-border-subtle bg-surface-alt hover:border-antique-gold cursor-pointer text-center text-xs transition-all">
+<input class="sr-only peer" name="wizTime" type="radio" value="15:30 WIB (Sore)"/>
+<span class="text-text-body peer-checked:text-forest-deep peer-checked:font-bold block">15:30 WIB</span>
+<span class="text-[9px] text-text-muted block">Sesi Sore</span>
+</label>
+<label class="p-2.5 rounded-xl border border-border-subtle bg-surface-alt hover:border-antique-gold cursor-pointer text-center text-xs transition-all col-span-2 sm:col-span-1">
+<input class="sr-only peer" name="wizTime" type="radio" value="18:30 WIB (Malam)"/>
+<span class="text-text-body peer-checked:text-forest-deep peer-checked:font-bold block">18:30 WIB</span>
+<span class="text-[9px] text-text-muted block">Sesi Malam</span>
+</label>
+</div>
+</div>
+</div>
+<div class="flex justify-between pt-4">
+<button class="px-6 py-3 border border-border-subtle text-text-muted rounded-full text-[11px] uppercase tracking-[0.2em] hover:text-text-main transition-all" onclick="goToStep(1)" type="button">
+              Kembali
+            </button>
+<button class="px-8 py-3.5 bg-forest-deep text-white rounded-full font-semibold text-[11px] uppercase tracking-[0.2em] hover:bg-forest-tint transition-all flex items-center gap-2 shadow-sm" onclick="goToStep(3)" type="button">
+<span>Lanjut ke Data Tamu</span>
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M9 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</div>
+</div>
+<!-- STEP 3 -->
+<div class="space-y-6 hidden" id="wizardStep3">
+<div class="space-y-1">
+<h3 class="font-serif text-2xl text-text-main">Data Diri &amp; Konfirmasi</h3>
+<p class="text-xs text-text-body font-light">Data Anda aman dan langsung diarahkan ke staf WhatsApp Alia Salon:</p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div class="space-y-1.5">
+<label class="block text-[11px] uppercase tracking-[0.18em] text-text-muted font-semibold" for="wizName">Nama Lengkap Ukhti *</label>
+<input class="w-full px-4 py-3 rounded-xl border border-border-subtle bg-surface-alt text-text-main placeholder-text-muted/50 focus:outline-none focus:border-antique-gold text-sm transition-all" id="wizName" placeholder="Contoh: Fatimah Az-Zahra" required="" type="text"/>
+</div>
+<div class="space-y-1.5">
+<label class="block text-[11px] uppercase tracking-[0.18em] text-text-muted font-semibold" for="wizPhone">Nomor WhatsApp Aktif *</label>
+<input class="w-full px-4 py-3 rounded-xl border border-border-subtle bg-surface-alt text-text-main placeholder-text-muted/50 focus:outline-none focus:border-antique-gold text-sm transition-all" id="wizPhone" placeholder="Contoh: 081280612377" required="" type="tel"/>
+</div>
+</div>
+<div class="space-y-1.5">
+<label class="block text-[11px] uppercase tracking-[0.18em] text-text-muted font-semibold" for="wizNotes">Catatan / Permintaan Khusus (Opsional)</label>
+<textarea class="w-full px-4 py-2.5 rounded-xl border border-border-subtle bg-surface-alt text-text-main placeholder-text-muted/50 focus:outline-none focus:border-antique-gold text-sm transition-all" id="wizNotes" placeholder="Contoh: Kulit kepala sensitif atau ingin request kapster tertentu." rows="2"></textarea>
+</div>
+<!-- Live Summary Box -->
+<div class="p-5 rounded-2xl bg-surface-alt border border-antique-gold/30 space-y-2">
+<div class="flex items-center justify-between text-xs text-text-body font-light">
+<span>Layanan Terpilih:</span>
+<span class="text-text-main font-semibold" id="summaryServicesCount">1 Layanan Dipilih</span>
+</div>
+<div class="flex items-center justify-between text-xs text-text-body font-light">
+<span>Total Estimasi Perawatan:</span>
+<span class="font-serif text-xl text-forest-deep font-semibold" id="summaryTotalPrice">Rp 65.000</span>
+</div>
+<div class="pt-2 border-t border-border-subtle flex items-center gap-2 text-[10px] text-text-muted">
+<span class="w-1.5 h-1.5 rounded-full bg-emerald-600"></span>
+<span>Pembayaran dilakukan di lokasi salon (Cash / QRIS / Transfer) • Privasi Terjamin</span>
+</div>
+</div>
+<div class="flex justify-between pt-2">
+<button class="px-6 py-3 border border-border-subtle text-text-muted rounded-full text-[11px] uppercase tracking-[0.2em] hover:text-text-main transition-all" onclick="goToStep(2)" type="button">
+              Kembali
+            </button>
+<button class="px-8 py-3.5 bg-forest-deep text-white rounded-full font-semibold text-[11px] uppercase tracking-[0.2em] hover:bg-forest-tint transition-all shadow-luxe flex items-center gap-2.5 group" type="submit">
+<svg class="w-4 h-4 fill-current text-white" viewbox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.711 2.598 2.669-.699c.969.531 1.771.821 2.791.821 3.182 0 5.768-2.587 5.768-5.766.001-3.181-2.585-5.807-5.768-5.807zm8.016 5.766c0 4.418-3.593 8.01-8.016 8.01-1.396 0-2.695-.36-3.832-1.002l-4.229 1.109 1.129-4.122c-.737-1.19-1.138-2.569-1.138-3.995 0-4.419 3.593-8.012 8.016-8.012 4.423 0 8.07 3.593 8.07 8.012z"></path></svg>
+<span>Kirim Reservasi ke WhatsApp (+62 812-8061-2377)</span>
+</button>
+</div>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- ======================================================== -->
+<!-- SECTION: LOKASI & KONTAK CONCIERGE -->
+<!-- ======================================================== -->
+<section class="py-20 lg:py-28 relative bg-[#FAF9F5]" id="lokasi">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+<!-- Left: Contact Details -->
+<div class="lg:col-span-5 space-y-6 lg:space-y-8">
+<div class="space-y-3">
+<div class="inline-flex items-center gap-2 text-[10px] uppercase tracking-[0.3em] text-antique-gold font-bold">
+<span>05</span>
+<span class="w-8 h-[1px] bg-antique-gold"></span>
+<span>Lokasi &amp; Kontak</span>
+</div>
+<h2 class="font-serif text-3xl sm:text-5xl font-normal text-text-main leading-tight">
+            Kunjungi Sanctuary di <br/>
+<span class="italic text-antique-gold">Cikarang Selatan</span>
+</h2>
+</div>
+<p class="text-sm text-text-body font-light leading-relaxed">
+          Berada di lokasi strategis Sukadami, mudah dijangkau dari perumahan maupun kawasan industri Cikarang Selatan dengan area parkir aman.
+        </p>
+<!-- Information Items -->
+<div class="space-y-5 pt-1">
+<!-- 1 -->
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-forest-soft border border-forest-deep/15 flex items-center justify-center text-forest-deep shrink-0">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+<path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+</div>
+<div>
+<span class="text-[10px] uppercase tracking-[0.2em] text-text-muted font-bold block">Alamat Sanctuary</span>
+<p class="text-sm text-text-main mt-0.5 leading-relaxed font-light">
+                Jl. Raya Serang - Setu No.171, Sukadami, Cikarang Selatan, Kabupaten Bekasi, Jawa Barat 17530
+              </p>
+</div>
+</div>
+<!-- 2 -->
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-forest-soft border border-forest-deep/15 flex items-center justify-center text-forest-deep shrink-0">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+</div>
+<div>
+<span class="text-[10px] uppercase tracking-[0.2em] text-text-muted font-bold block">Waktu Operasional Concierge</span>
+<p class="text-sm text-text-main mt-0.5 font-light">
+                Senin – Minggu: 07:30 – 20:30 WIB
+              </p>
+<span class="inline-block mt-1 text-[10px] text-emerald-800 bg-emerald-100 px-2.5 py-0.5 rounded-full border border-emerald-300 font-semibold">
+                Buka Setiap Hari (Tanpa Libur)
+              </span>
+</div>
+</div>
+<!-- 3 -->
+<div class="flex items-start gap-4">
+<div class="w-10 h-10 rounded-full bg-forest-soft border border-forest-deep/15 flex items-center justify-center text-forest-deep shrink-0">
+<svg class="w-4 h-4" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+</div>
+<div>
+<span class="text-[10px] uppercase tracking-[0.2em] text-text-muted font-bold block">Hotline WhatsApp Reservasi</span>
+<a class="font-serif text-xl text-antique-gold hover:underline block mt-0.5 font-medium" href="https://wa.me/6281280612377" rel="noopener noreferrer" target="_blank">
+                +62 812-8061-2377
+              </a>
+</div>
+</div>
+</div>
+</div>
+<!-- Right: Interactive Styled Map Box -->
+<div class="lg:col-span-7">
+<div class="relative rounded-3xl overflow-hidden bg-surface-card border border-border-subtle shadow-luxe p-3 sm:p-4">
+<div class="relative w-full h-[360px] sm:h-[400px] rounded-2xl overflow-hidden bg-[#ECE8DC] flex items-center justify-center border border-border-subtle">
+<!-- Map Dot Grids -->
+<div class="absolute inset-0 opacity-25 pointer-events-none" style="background-image: radial-gradient(rgba(184, 147, 62, 0.5) 1px, transparent 1px); background-size: 24px 24px;"></div>
+<!-- Road outlines -->
+<div class="absolute inset-0 p-8 flex flex-col justify-between pointer-events-none opacity-40">
+<div class="w-3/4 h-[2px] bg-antique-gold rotate-12 origin-left"></div>
+<div class="w-full h-[3px] bg-forest-deep -rotate-6"></div>
+<div class="w-1/2 h-[2px] bg-antique-gold"></div>
+</div>
+<!-- Central Pin -->
+<div class="relative z-10 text-center flex flex-col items-center">
+<div class="w-14 h-14 bg-surface-card text-forest-deep rounded-full flex items-center justify-center shadow-luxe border border-antique-gold animate-bounce">
+<svg class="w-7 h-7" fill="none" stroke="currentColor" viewbox="0 0 24 24">
+<path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+<path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path>
+</svg>
+</div>
+<div class="mt-3 px-4 py-2 bg-white/95 backdrop-blur-md rounded-xl border border-border-subtle shadow-md">
+<p class="font-serif text-lg text-text-main font-medium">Alia Salon Muslimah Flagship</p>
+<p class="text-[10px] text-antique-gold font-sans tracking-widest uppercase font-semibold">Sukadami • Cikarang Selatan</p>
+</div>
+</div>
+<!-- Maps Button -->
+<a class="absolute top-4 right-4 z-20 px-4 py-2 bg-white/95 text-[11px] uppercase tracking-wider text-text-main font-semibold rounded-full shadow border border-border-subtle hover:bg-forest-deep hover:text-white transition-colors flex items-center gap-2" href="https://maps.google.com/?q=Alia+Salon+Muslimah+Sukadami+Cikarang+Selatan" rel="noopener noreferrer" target="_blank">
+<span>Buka Google Maps</span>
+<svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</a>
+</div>
+<!-- Bottom Action Buttons -->
+<div class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-3">
+<a class="py-3 px-4 rounded-xl bg-forest-deep text-white text-[11px] font-semibold uppercase tracking-[0.18em] text-center hover:bg-forest-tint transition-colors flex items-center justify-center gap-2 shadow-sm" href="https://wa.me/6281280612377?text=Halo%20Alia%20Salon,%20saya%20ingin%20tanya%20arah%20lokasi%20salon" rel="noopener noreferrer" target="_blank">
+<span>Chat Concierge WhatsApp</span>
+</a>
+<a class="py-3 px-4 rounded-xl bg-surface-alt text-text-main border border-border-subtle text-[11px] font-semibold uppercase tracking-[0.18em] text-center hover:border-antique-gold transition-colors flex items-center justify-center" href="https://maps.google.com/?q=Alia+Salon+Muslimah+Sukadami+Cikarang+Selatan" rel="noopener noreferrer" target="_blank">
+<span>Petunjuk Rute Kendaraan</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ======================================================== -->
+<!-- FOOTER -->
+<!-- ======================================================== -->
+<footer class="bg-surface-alt border-t border-border-subtle pt-16 pb-12 relative overflow-hidden">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-10 lg:gap-12 pb-12 border-b border-border-subtle">
+<!-- Col 1 -->
+<div class="md:col-span-5 space-y-4">
+<div class="flex items-center gap-3">
+<div class="w-11 h-11 rounded-full overflow-hidden p-[2px] bg-surface-card border border-antique-gold/40 shadow-sm shrink-0">
+<img alt="Logo Alia Salon Muslimah" class="w-full h-full object-contain" src="logo%20salon.jpg"/>
+</div>
+<div>
+<span class="font-serif text-2xl tracking-[0.04em] text-text-main block font-normal">ALIA SALON</span>
+<span class="text-[9px] uppercase tracking-[0.25em] text-antique-gold font-semibold font-sans">Haute Muslimah Sanctuary</span>
+</div>
+</div>
+<p class="text-xs text-text-body font-light leading-relaxed max-w-sm">
+          Pusat perawatan kecantikan wanita dengan standar privasi islami yang terjaga, bahan alami bersertifikasi halal BPOM, dan kapster berpengalaman di Cikarang Selatan.
+        </p>
+<p class="font-serif italic text-forest-deep text-sm pt-1">
+          "Kenyamanan, kebersihan, dan pemuliaan diri seorang muslimah."
+        </p>
+</div>
+<!-- Col 2 -->
+<div class="md:col-span-3 space-y-3">
+<span class="text-[10px] uppercase tracking-[0.25em] text-antique-gold font-bold block">Suites Layanan</span>
+<ul class="space-y-2 text-xs text-text-body font-light">
+<li><a class="hover:text-forest-deep transition-colors" href="#layanan">Potong Rambut Syar'i &amp; Styling</a></li>
+<li><a class="hover:text-forest-deep transition-colors" href="#layanan">Creambath &amp; Pijat Relaksasi</a></li>
+<li><a class="hover:text-forest-deep transition-colors" href="#layanan">Rebonding &amp; Smoothing Silk</a></li>
+<li><a class="hover:text-forest-deep transition-colors" href="#layanan">Facial Steril &amp; Totok Wajah Giok</a></li>
+<li><a class="hover:text-forest-deep transition-colors" href="#layanan">Lulur Rempah &amp; Ratus V-Spa</a></li>
+</ul>
+</div>
+<!-- Col 3 -->
+<div class="md:col-span-4 space-y-3">
+<span class="text-[10px] uppercase tracking-[0.25em] text-antique-gold font-bold block">Akademi &amp; Kontak Resmi</span>
+<p class="text-xs text-text-body font-light leading-relaxed">
+          Pendaftaran kelas pelatihan kursus salon wanita reguler &amp; privat dengan sertifikat kelulusan resmi.
+        </p>
+<div class="pt-2 text-xs space-y-1">
+<div class="text-text-muted">Jam Buka: <span class="text-text-main font-medium">07:30 – 20:30 WIB (Buka Setiap Hari)</span></div>
+<div class="text-text-muted">Hotline WhatsApp: <span class="text-forest-deep font-semibold">+62 812-8061-2377</span></div>
+<div class="text-text-muted">Lokasi: <span class="text-text-main font-medium">Sukadami, Cikarang Selatan, Bekasi</span></div>
+</div>
+</div>
+</div>
+<!-- Copyright -->
+<div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] uppercase tracking-[0.18em] text-text-muted gap-4">
+<p>© 2025 ALIA SALON MUSLIMAH. ALL RIGHTS RESERVED.</p>
+<div class="flex items-center gap-6 font-medium">
+<span>Google Rating 4.9★</span>
+<span>•</span>
+<span>100% Khusus Akhwat</span>
+</div>
+</div>
+</div>
+</footer>
+
+<!-- External Professional Script -->
+<script src="script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,436 @@
+/* ========================================================
+   ALIA SALON MUSLIMAH — Professional Styles
+   Separated + Enhanced Effects (Production Grade)
+   ======================================================== */
+
+/* Base Reset & Core */
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* Hide default cursor only on fine pointers (desktop) */
+@media (pointer: fine) {
+  body, a, button, select, input, label, textarea {
+    cursor: none !important;
+  }
+}
+
+/* --------------------------------------------------------
+   CUSTOM CURSOR SYSTEM (Bulletproof / GPU)
+   - Position via transform only (no left/top reflow)
+   - Scale for hover (no width/height animation conflict)
+   - Hidden until first mouse move
+   -------------------------------------------------------- */
+.cursor-dot,
+.cursor-follower {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  opacity: 0;
+  visibility: hidden;
+  will-change: transform;
+  backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+.cursor-dot {
+  width: 6px;
+  height: 6px;
+  margin: -3px 0 0 -3px; /* center without transform offset conflict */
+  background: #B8933E;
+  z-index: 10001;
+  transition: background 0.12s ease, opacity 0.2s ease;
+}
+
+.cursor-follower {
+  width: 36px;
+  height: 36px;
+  margin: -18px 0 0 -18px;
+  border: 1.5px solid rgba(184, 147, 62, 0.55);
+  background: rgba(184, 147, 62, 0.07);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease,
+              border-color 0.3s ease,
+              box-shadow 0.3s ease,
+              opacity 0.25s ease;
+}
+
+/* Visible after first move */
+.cursor-dot.is-active,
+.cursor-follower.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Hover state = scale only (GPU, no layout thrashing) */
+.cursor-follower.is-hover {
+  background: rgba(29, 56, 43, 0.95);
+  border-color: #B8933E;
+  box-shadow: 0 0 28px rgba(184, 147, 62, 0.4);
+}
+
+.cursor-follower.is-hover::after {
+  content: attr(data-cursor-text);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #FAF9F5;
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  animation: fadeInCursorText 0.22s ease 0.04s forwards;
+}
+
+@keyframes fadeInCursorText {
+  from { opacity: 0; transform: scale(0.9); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+/* Click feedback on the dot */
+.cursor-dot.is-click {
+  background: #DFCA88;
+}
+
+/* When leaving window */
+.cursor-dot.is-hidden,
+.cursor-follower.is-hidden {
+  opacity: 0 !important;
+  visibility: hidden;
+}
+
+/* --------------------------------------------------------
+   GOLD SHIMMER & MARQUEE
+   -------------------------------------------------------- */
+.gold-shimmer {
+  background: linear-gradient(110deg, #B8933E 0%, #DFCA88 45%, #B8933E 80%);
+  background-size: 200% 100%;
+  animation: goldShimmer 5s ease infinite;
+}
+
+@keyframes goldShimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+@keyframes marquee {
+  0% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(-50%, 0, 0); }
+}
+
+.animate-marquee {
+  display: flex;
+  align-items: center;
+  width: max-content;
+  min-width: max-content;
+  white-space: nowrap;
+  will-change: transform;
+  animation-name: marquee;
+  animation-duration: 18s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  transform: translate3d(0, 0, 0);
+  -webkit-animation-name: marquee;
+  -webkit-animation-duration: 18s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: running;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: marquee 18s linear infinite !important;
+    -webkit-animation: marquee 18s linear infinite !important;
+  }
+}
+
+/* --------------------------------------------------------
+   SCROLLBAR & UTILITIES
+   -------------------------------------------------------- */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom thin scrollbar for service list */
+.no-scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+.no-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.no-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(184, 147, 62, 0.35);
+  border-radius: 4px;
+}
+
+/* --------------------------------------------------------
+   REVEAL ANIMATIONS (Scroll Triggered)
+   -------------------------------------------------------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-5 { transition-delay: 0.5s; }
+
+.reveal-scale {
+  opacity: 0;
+  transform: scale(0.94);
+  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-scale.is-visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.reveal-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-left.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.reveal-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: opacity 0.9s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.9s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-right.is-visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* --------------------------------------------------------
+   HEADER EFFECTS
+   -------------------------------------------------------- */
+header {
+  transition: height 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.35s ease,
+              background 0.35s ease,
+              backdrop-filter 0.35s ease;
+}
+
+header.is-scrolled {
+  box-shadow: 0 8px 32px -8px rgba(26, 35, 28, 0.12);
+  background: rgba(250, 249, 245, 0.97);
+}
+
+/* --------------------------------------------------------
+   SERVICE CARD & PILLAR HOVER ENHANCEMENTS
+   -------------------------------------------------------- */
+.service-row {
+  transition: background 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-row:hover {
+  transform: translateX(4px);
+}
+
+.pillar-card {
+  transition: border-color 0.35s ease,
+              box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pillar-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px -12px rgba(26, 35, 28, 0.14);
+}
+
+/* --------------------------------------------------------
+   WIZARD STEP TRANSITIONS
+   -------------------------------------------------------- */
+#wizardStep1,
+#wizardStep2,
+#wizardStep3 {
+  transition: opacity 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Checkbox / radio visual feedback (works without :has() compatibility issues) */
+label.is-selected {
+  border-color: rgba(184, 147, 62, 0.7) !important;
+  background: rgba(232, 240, 234, 0.6) !important;
+  box-shadow: 0 0 0 1px rgba(184, 147, 62, 0.25);
+}
+
+.service-choice-invalid {
+  animation: shake 0.4s ease;
+}
+
+/* --------------------------------------------------------
+   HERO IMAGE PARALLAX & OVERLAY
+   -------------------------------------------------------- */
+.hero-image-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-image {
+  transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.hero-image-wrapper:hover .hero-image {
+  transform: scale(1.06);
+}
+
+/* --------------------------------------------------------
+   BUTTON MAGNETIC / PRESS EFFECTS
+   -------------------------------------------------------- */
+.btn-luxe {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.3s ease;
+}
+
+.btn-luxe:active {
+  transform: scale(0.97);
+}
+
+.btn-luxe::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at var(--x, 50%) var(--y, 50%), rgba(255,255,255,0.18) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.btn-luxe:hover::after {
+  opacity: 1;
+}
+
+/* --------------------------------------------------------
+   PAGE LOAD FADE
+   -------------------------------------------------------- */
+.page-loader {
+  position: fixed;
+  inset: 0;
+  background: #FAF9F5;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+              visibility 0.7s;
+}
+
+.page-loader.is-done {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loader-logo {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid rgba(184, 147, 62, 0.3);
+  border-top-color: #B8933E;
+  animation: spinLoader 0.9s linear infinite;
+}
+
+@keyframes spinLoader {
+  to { transform: rotate(360deg); }
+}
+
+/* --------------------------------------------------------
+   FLOATING STATUS PULSE
+   -------------------------------------------------------- */
+@keyframes softPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.15); }
+}
+
+.live-dot {
+  animation: softPulse 2s ease-in-out infinite;
+}
+
+/* --------------------------------------------------------
+   ACCESSIBILITY & REDUCED MOTION
+   -------------------------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+  .reveal,
+  .reveal-scale,
+  .reveal-left,
+  .reveal-right,
+  .gold-shimmer,
+  .hero-image {
+    animation: none !important;
+    transition: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  .cursor-dot,
+  .cursor-follower {
+    transition: none !important;
+  }
+}
+
+.animate-marquee {
+  animation: marquee 18s linear infinite !important;
+  -webkit-animation: marquee 18s linear infinite !important;
+}
+
+/* --------------------------------------------------------
+   SELECTION & FOCUS
+   -------------------------------------------------------- */
+::selection {
+  background: rgba(184, 147, 62, 0.22);
+  color: #1D382B;
+}
+
+.image-fallback-label {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 9999px;
+  background: rgba(255,255,255,0.55);
+  border: 1px solid rgba(184,147,62,0.4);
+  backdrop-filter: blur(4px);
+}
+
+:focus-visible {
+  outline: 2px solid #B8933E;
+  outline-offset: 3px;
+}
